@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Sprion-circuit)(type Legacy)(uri ${KIPRJMOD}/Sprion-circuit.lib)(options "")(descr ""))
+)
