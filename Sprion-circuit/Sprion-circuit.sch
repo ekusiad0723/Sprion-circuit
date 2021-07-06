@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 4
+Sheet 1 5
 Title ""
 Date ""
 Rev ""
@@ -45,5 +45,11 @@ U 60F3852A
 F0 "Power" 50
 F1 "Power.sch" 50
 F2 "BAT" I L 1300 3950 50 
+$EndSheet
+$Sheet
+S 8850 2400 1850 900 
+U 60E5E10A
+F0 "wall_sensor" 50
+F1 "wall_sensor.sch" 50
 $EndSheet
 $EndSCHEMATC

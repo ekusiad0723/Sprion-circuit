@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 4
+Sheet 2 5
 Title ""
 Date ""
 Rev ""
@@ -511,10 +511,10 @@ MD1_IN2
 Text HLabel 3100 1950 0    50   Input ~ 0
 MD1_IN1
 $Comp
-L power:+3.3VA #PWR?
+L power:+3.3VA #PWR024
 U 1 1 60E5C849
 P 1900 1700
-F 0 "#PWR?" H 1900 1550 50  0001 C CNN
+F 0 "#PWR024" H 1900 1550 50  0001 C CNN
 F 1 "+3.3VA" H 1915 1873 50  0000 C CNN
 F 2 "" H 1900 1700 50  0001 C CNN
 F 3 "" H 1900 1700 50  0001 C CNN
