@@ -1,3 +1,8 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP LXDC55FAAA-203
+D Non-Isolated DC/DC Converters Variable Output 1.5A 5x5.7mm, uDC-DC
+F https://componentsearchengine.com/Datasheets/1/LXDC55FAAA-203.pdf
+$ENDCMP
+#
 #End Doc Library
