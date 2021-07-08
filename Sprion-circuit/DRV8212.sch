@@ -46,9 +46,9 @@ F 3 "" H 4650 2100 50  0001 C CNN
 	1    4650 2100
 	0    1    1    0   
 $EndComp
-Text HLabel 3800 1950 2    50   Input ~ 0
+Text HLabel 3800 1950 2    50   Output ~ 0
 MD1_OUT1
-Text HLabel 3800 2250 2    50   Input ~ 0
+Text HLabel 3800 2250 2    50   Output ~ 0
 MD1_OUT2
 $Comp
 L power:GND #PWR0103
@@ -88,7 +88,7 @@ F 3 "~" H 3100 3400 50  0001 C CNN
 	1    3100 3400
 	1    0    0    -1  
 $EndComp
-Text HLabel 4850 3200 2    50   Input ~ 0
+Text HLabel 4850 3200 2    50   Output ~ 0
 MD1_CS
 $Comp
 L Device:R R1
@@ -106,7 +106,7 @@ L Device:C C1
 U 1 1 60E9A26A
 P 4300 4300
 F 0 "C1" V 4048 4300 50  0000 C CNN
-F 1 "0.1" V 4139 4300 50  0000 C CNN
+F 1 "0.1u" V 4139 4300 50  0000 C CNN
 F 2 "" H 4338 4150 50  0001 C CNN
 F 3 "~" H 4300 4300 50  0001 C CNN
 	1    4300 4300
@@ -209,9 +209,9 @@ F 3 "" H 4650 4850 50  0001 C CNN
 	1    4650 4850
 	0    1    1    0   
 $EndComp
-Text HLabel 3800 4700 2    50   Input ~ 0
+Text HLabel 3800 4700 2    50   Output ~ 0
 MD2_OUT1
-Text HLabel 3800 5000 2    50   Input ~ 0
+Text HLabel 3800 5000 2    50   Output ~ 0
 MD2_OUT2
 $Comp
 L power:GND #PWR0110
@@ -251,7 +251,7 @@ F 3 "~" H 3100 6150 50  0001 C CNN
 	1    3100 6150
 	1    0    0    -1  
 $EndComp
-Text HLabel 4850 5950 2    50   Input ~ 0
+Text HLabel 4850 5950 2    50   Output ~ 0
 MD2_CS
 $Comp
 L Device:R R4
@@ -269,7 +269,7 @@ L Device:C C2
 U 1 1 60F1B554
 P 4300 7050
 F 0 "C2" V 4048 7050 50  0000 C CNN
-F 1 "0.1" V 4139 7050 50  0000 C CNN
+F 1 "0.1u" V 4139 7050 50  0000 C CNN
 F 2 "" H 4338 6900 50  0001 C CNN
 F 3 "~" H 4300 7050 50  0001 C CNN
 	1    4300 7050
@@ -357,9 +357,9 @@ F 3 "" H 9200 2100 50  0001 C CNN
 	1    9200 2100
 	0    1    1    0   
 $EndComp
-Text HLabel 8350 1950 2    50   Input ~ 0
+Text HLabel 8350 1950 2    50   Output ~ 0
 MD_SUC_OUT1
-Text HLabel 8350 2250 2    50   Input ~ 0
+Text HLabel 8350 2250 2    50   Output ~ 0
 MD_SUC_OUT2
 $Comp
 L power:GND #PWR0113
