@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 5
+Sheet 5 5
 Title ""
 Date ""
 Rev ""
@@ -24,4 +24,221 @@ F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/da
 	1    3300 3500
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	3200 5300 3300 5300
+Connection ~ 3300 5300
+Wire Wire Line
+	3300 5300 3400 5300
+$Comp
+L power:GND #PWR?
+U 1 1 60EE0122
+P 3200 5300
+F 0 "#PWR?" H 3200 5050 50  0001 C CNN
+F 1 "GND" H 3205 5127 50  0000 C CNN
+F 2 "" H 3200 5300 50  0001 C CNN
+F 3 "" H 3200 5300 50  0001 C CNN
+	1    3200 5300
+	1    0    0    -1  
+$EndComp
+Connection ~ 3200 5300
+$Comp
+L power:+3.3V #PWR?
+U 1 1 60EE1AE2
+P 3100 1700
+F 0 "#PWR?" H 3100 1550 50  0001 C CNN
+F 1 "+3.3V" H 3115 1873 50  0000 C CNN
+F 2 "" H 3100 1700 50  0001 C CNN
+F 3 "" H 3100 1700 50  0001 C CNN
+	1    3100 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 1700 3200 1700
+Connection ~ 3100 1700
+Connection ~ 3200 1700
+Wire Wire Line
+	3200 1700 3300 1700
+Connection ~ 3300 1700
+Wire Wire Line
+	3300 1700 3400 1700
+Connection ~ 3400 1700
+Wire Wire Line
+	3400 1700 3500 1700
+$Comp
+L power:+3.3VA #PWR?
+U 1 1 60EE2B83
+P 3600 1700
+F 0 "#PWR?" H 3600 1550 50  0001 C CNN
+F 1 "+3.3VA" H 3615 1873 50  0000 C CNN
+F 2 "" H 3600 1700 50  0001 C CNN
+F 3 "" H 3600 1700 50  0001 C CNN
+	1    3600 1700
+	1    0    0    -1  
+$EndComp
+Text Label 2600 1900 2    50   ~ 0
+RESET
+$Comp
+L power:GND #PWR?
+U 1 1 60EE357E
+P 2450 2100
+F 0 "#PWR?" H 2450 1850 50  0001 C CNN
+F 1 "GND" V 2455 1972 50  0000 R CNN
+F 2 "" H 2450 2100 50  0001 C CNN
+F 3 "" H 2450 2100 50  0001 C CNN
+	1    2450 2100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2450 2100 2600 2100
+Text HLabel 4250 3900 2    50   Output ~ 0
+IMU_SCK
+Text HLabel 4250 4000 2    50   Input ~ 0
+IMU_MISO
+Text HLabel 4250 4100 2    50   Output ~ 0
+IMU_MOSI
+Wire Wire Line
+	4250 3900 4000 3900
+Wire Wire Line
+	4250 4000 4000 4000
+Wire Wire Line
+	4250 4100 4000 4100
+Text HLabel 2350 4300 0    50   Input ~ 0
+ENCODER_1B
+Text HLabel 2350 4200 0    50   Input ~ 0
+ENCODER_1A
+Text HLabel 4250 4400 2    50   Output ~ 0
+IMU_CS
+Wire Wire Line
+	4250 4400 4000 4400
+Wire Wire Line
+	2350 4300 2600 4300
+Wire Wire Line
+	2350 4200 2600 4200
+Text HLabel 4250 4200 2    50   Input ~ 0
+ENCODER_1A
+Text HLabel 4250 4300 2    50   Input ~ 0
+ENCODER_1B
+Wire Wire Line
+	4250 4200 4000 4200
+Wire Wire Line
+	4250 4300 4000 4300
+Text HLabel 2350 3600 0    50   Input ~ 0
+BATT
+Wire Wire Line
+	2600 3600 2350 3600
+Text HLabel 4250 1900 2    50   Output ~ 0
+IRLED_FRONT
+Text HLabel 4250 2000 2    50   Output ~ 0
+IRLED_SIDE
+Wire Wire Line
+	4000 1900 4250 1900
+Wire Wire Line
+	4000 2000 4250 2000
+Text HLabel 4300 2700 2    50   Output ~ 0
+MD1_IN1
+Text HLabel 4300 2800 2    50   Output ~ 0
+MD1_IN2
+Text HLabel 4300 2900 2    50   Output ~ 0
+MD2_IN1
+Text HLabel 4300 3000 2    50   Output ~ 0
+MD2_IN2
+Wire Wire Line
+	4000 2700 4300 2700
+Wire Wire Line
+	4000 2800 4300 2800
+Wire Wire Line
+	4000 2900 4300 2900
+Wire Wire Line
+	4000 3000 4300 3000
+Text HLabel 2350 3700 0    50   Input ~ 0
+MD1_CS
+Text HLabel 2350 3800 0    50   Input ~ 0
+MD2_CS
+Wire Wire Line
+	2350 3700 2600 3700
+Wire Wire Line
+	2350 3800 2600 3800
+Text HLabel 2350 4000 0    50   Input ~ 0
+SENSOR_WALL_FR
+Text HLabel 2350 4100 0    50   Input ~ 0
+SENSOR_WALL_FL
+Text HLabel 4250 3700 2    50   Input ~ 0
+SENSOR_WALL_SR
+Text HLabel 4250 3600 2    50   Input ~ 0
+SENSOR_WALL_SL
+Wire Wire Line
+	4000 3600 4250 3600
+Wire Wire Line
+	4000 3700 4250 3700
+$Comp
+L Device:C C?
+U 1 1 60EF0F88
+P 1700 2300
+F 0 "C?" V 1448 2300 50  0000 C CNN
+F 1 "2.2u" V 1539 2300 50  0000 C CNN
+F 2 "" H 1738 2150 50  0001 C CNN
+F 3 "~" H 1700 2300 50  0001 C CNN
+	1    1700 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60EF1ACA
+P 1700 2700
+F 0 "C?" V 1448 2700 50  0000 C CNN
+F 1 "2.2u" V 1539 2700 50  0000 C CNN
+F 2 "" H 1738 2550 50  0001 C CNN
+F 3 "~" H 1700 2700 50  0001 C CNN
+	1    1700 2700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1850 2300 2600 2300
+Wire Wire Line
+	2600 2400 1850 2400
+Wire Wire Line
+	1850 2400 1850 2700
+$Comp
+L power:GND #PWR?
+U 1 1 60EF339E
+P 1400 2800
+F 0 "#PWR?" H 1400 2550 50  0001 C CNN
+F 1 "GND" H 1405 2627 50  0000 C CNN
+F 2 "" H 1400 2800 50  0001 C CNN
+F 3 "" H 1400 2800 50  0001 C CNN
+	1    1400 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 2700 1400 2700
+Wire Wire Line
+	1400 2700 1400 2800
+Wire Wire Line
+	1550 2300 1400 2300
+Wire Wire Line
+	1400 2300 1400 2700
+Connection ~ 1400 2700
+$Comp
+L LED:SK6812MINI D?
+U 1 1 60EFAFD7
+P 5650 6250
+F 0 "D?" H 5994 6296 50  0000 L CNN
+F 1 "SK6812MINI" H 5994 6205 50  0000 L CNN
+F 2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" H 5700 5950 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 5750 5875 50  0001 L TNN
+	1    5650 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 4000 2600 4000
+Wire Wire Line
+	2350 4100 2600 4100
+Text Label 4250 5000 0    50   ~ 0
+SPEAKER
+Text Label 4250 4500 0    50   ~ 0
+FULLCOLOR_LED
+Wire Wire Line
+	4000 4500 4250 4500
+Wire Wire Line
+	4000 5000 4250 5000
 $EndSCHEMATC
