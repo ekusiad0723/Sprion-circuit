@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 5
+Sheet 2 6
 Title ""
 Date ""
 Rev ""
@@ -170,8 +170,6 @@ Wire Wire Line
 Connection ~ 3900 4000
 Wire Wire Line
 	3900 4000 3900 4300
-Text Notes 5600 3550 0    50   ~ 0
-Amplification rate:51\nTransfer function:V_out=0.51*I_s\nCut off frequency:796Hz
 $Comp
 L Sprion-circuit:DRV8212_DRL MD2
 U 1 1 60F1B51B
@@ -332,71 +330,25 @@ Connection ~ 3900 6750
 Wire Wire Line
 	3900 6750 3900 7050
 $Comp
-L Sprion-circuit:DRV8212_DRL MD3
-U 1 1 60F210D1
-P 8000 2100
-F 0 "MD3" H 8000 2515 50  0000 C CNN
-F 1 "DRV8212_DRL" H 8000 2424 50  0000 C CNN
-F 2 "" H 8000 2100 50  0001 C CNN
-F 3 "" H 8000 2100 50  0001 C CNN
-	1    8000 2100
-	1    0    0    -1  
-$EndComp
-Text HLabel 7650 1950 0    50   Input ~ 0
-MD_SUC_IN1
-Text HLabel 7650 2100 0    50   Input ~ 0
-MD_SUC_IN2
-$Comp
 L power:+BATT #PWR0112
 U 1 1 60F210D9
-P 9200 2100
-F 0 "#PWR0112" H 9200 1950 50  0001 C CNN
-F 1 "+BATT" V 9215 2228 50  0000 L CNN
-F 2 "" H 9200 2100 50  0001 C CNN
-F 3 "" H 9200 2100 50  0001 C CNN
-	1    9200 2100
-	0    1    1    0   
+P 8350 1600
+F 0 "#PWR0112" H 8350 1450 50  0001 C CNN
+F 1 "+BATT" V 8365 1728 50  0000 L CNN
+F 2 "" H 8350 1600 50  0001 C CNN
+F 3 "" H 8350 1600 50  0001 C CNN
+	1    8350 1600
+	1    0    0    -1  
 $EndComp
-Text HLabel 8350 1950 2    50   Output ~ 0
-MD_SUC_OUT1
-Text HLabel 8350 2250 2    50   Output ~ 0
-MD_SUC_OUT2
 $Comp
 L power:GND #PWR0113
 U 1 1 60F210E1
-P 8950 2400
-F 0 "#PWR0113" H 8950 2150 50  0001 C CNN
-F 1 "GND" H 8955 2227 50  0000 C CNN
-F 2 "" H 8950 2400 50  0001 C CNN
-F 3 "" H 8950 2400 50  0001 C CNN
-	1    8950 2400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C6
-U 1 1 60F210E7
-P 8950 2250
-F 0 "C6" H 9065 2296 50  0000 L CNN
-F 1 "0.1u" H 9065 2205 50  0000 L CNN
-F 2 "" H 8988 2100 50  0001 C CNN
-F 3 "~" H 8950 2250 50  0001 C CNN
-	1    8950 2250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8350 2100 8950 2100
-Connection ~ 8950 2100
-Wire Wire Line
-	8950 2100 9200 2100
-$Comp
-L power:GND #PWR0114
-U 1 1 60F21B92
-P 7650 2250
-F 0 "#PWR0114" H 7650 2000 50  0001 C CNN
-F 1 "GND" H 7655 2077 50  0000 C CNN
-F 2 "" H 7650 2250 50  0001 C CNN
-F 3 "" H 7650 2250 50  0001 C CNN
-	1    7650 2250
+P 8950 1850
+F 0 "#PWR0113" H 8950 1600 50  0001 C CNN
+F 1 "GND" H 8955 1677 50  0000 C CNN
+F 2 "" H 8950 1850 50  0001 C CNN
+F 3 "" H 8950 1850 50  0001 C CNN
+	1    8950 1850
 	1    0    0    -1  
 $EndComp
 Text HLabel 3100 2100 0    50   Input ~ 0
@@ -549,4 +501,71 @@ Wire Wire Line
 Wire Wire Line
 	4200 5650 4350 5650
 Connection ~ 4200 5650
+$Comp
+L power:GND #PWR0114
+U 1 1 60F21B92
+P 7450 2600
+F 0 "#PWR0114" H 7450 2350 50  0001 C CNN
+F 1 "GND" H 7455 2427 50  0000 C CNN
+F 2 "" H 7450 2600 50  0001 C CNN
+F 3 "" H 7450 2600 50  0001 C CNN
+	1    7450 2600
+	1    0    0    -1  
+$EndComp
+Text HLabel 7450 2450 0    50   Input ~ 0
+MD_SUC_IN2
+Text HLabel 7450 2300 0    50   Input ~ 0
+MD_SUC_IN1
+$Comp
+L Sprion-circuit:DRV8212_DRL MD3
+U 1 1 60F210D1
+P 7800 2450
+F 0 "MD3" H 7800 2865 50  0000 C CNN
+F 1 "DRV8212_DRL" H 7800 2774 50  0000 C CNN
+F 2 "" H 7800 2450 50  0001 C CNN
+F 3 "" H 7800 2450 50  0001 C CNN
+	1    7800 2450
+	1    0    0    -1  
+$EndComp
+Text Notes 5600 3550 0    50   ~ 0
+Amplification rate:51\nTransfer function:V_out=0.51*I_s\nCut off frequency:796Hz
+$Comp
+L Connector:Conn_01x02_Female J?
+U 1 1 61A82ABA
+P 10000 2300
+F 0 "J?" H 10028 2276 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 10028 2185 50  0000 L CNN
+F 2 "" H 10000 2300 50  0001 C CNN
+F 3 "~" H 10000 2300 50  0001 C CNN
+	1    10000 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 2300 9800 2300
+Wire Wire Line
+	8150 2600 9800 2600
+Wire Wire Line
+	9800 2600 9800 2400
+Wire Wire Line
+	8350 2450 8150 2450
+Wire Wire Line
+	8350 1600 8350 1850
+$Comp
+L Device:C C6
+U 1 1 60F210E7
+P 8700 1850
+F 0 "C6" H 8815 1896 50  0000 L CNN
+F 1 "0.1u" H 8815 1805 50  0000 L CNN
+F 2 "" H 8738 1700 50  0001 C CNN
+F 3 "~" H 8700 1850 50  0001 C CNN
+	1    8700 1850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8550 1850 8350 1850
+Connection ~ 8350 1850
+Wire Wire Line
+	8350 1850 8350 2450
+Wire Wire Line
+	8850 1850 8950 1850
 $EndSCHEMATC

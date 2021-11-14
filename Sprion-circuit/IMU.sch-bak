@@ -1,0 +1,170 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Sensor_Motion:ICM-20602 U?
+U 1 1 61A9FA37
+P 4800 3000
+F 0 "U?" H 4800 2411 50  0000 C CNN
+F 1 "ICM-20602" H 4800 2320 50  0000 C CNN
+F 2 "Package_LGA:LGA-16_3x3mm_P0.5mm_LayoutBorder3x5y" H 4800 3250 50  0001 C CNN
+F 3 "http://www.invensense.com/wp-content/uploads/2016/10/DS-000176-ICM-20602-v1.0.pdf" H 4850 3950 50  0001 C CNN
+	1    4800 3000
+	1    0    0    -1  
+$EndComp
+Text HLabel 4050 3000 0    50   Input ~ 0
+IMU_SDI
+Text HLabel 4050 2900 0    50   Output ~ 0
+IMU_SDO
+Text HLabel 4050 3100 0    50   BiDi ~ 0
+IMU_SPC
+Text HLabel 4050 3200 0    50   Input ~ 0
+CS
+$Comp
+L power:GND #PWR?
+U 1 1 61AA4377
+P 4800 3500
+F 0 "#PWR?" H 4800 3250 50  0001 C CNN
+F 1 "GND" H 4805 3327 50  0000 C CNN
+F 2 "" H 4800 3500 50  0001 C CNN
+F 3 "" H 4800 3500 50  0001 C CNN
+	1    4800 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 61AA6150
+P 4650 1750
+F 0 "#PWR?" H 4650 1600 50  0001 C CNN
+F 1 "+3.3V" H 4665 1923 50  0000 C CNN
+F 2 "" H 4650 1750 50  0001 C CNN
+F 3 "" H 4650 1750 50  0001 C CNN
+	1    4650 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 61AA6FC5
+P 4200 1950
+F 0 "C?" H 4315 1996 50  0000 L CNN
+F 1 "0.1u" H 4315 1905 50  0000 L CNN
+F 2 "" H 4238 1800 50  0001 C CNN
+F 3 "~" H 4200 1950 50  0001 C CNN
+	1    4200 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 61AA7D2E
+P 4650 1950
+F 0 "C?" H 4765 1996 50  0000 L CNN
+F 1 "2.2u" H 4765 1905 50  0000 L CNN
+F 2 "" H 4688 1800 50  0001 C CNN
+F 3 "~" H 4650 1950 50  0001 C CNN
+	1    4650 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 61AA84C5
+P 5150 1950
+F 0 "C?" H 5265 1996 50  0000 L CNN
+F 1 "0.01u" H 5265 1905 50  0000 L CNN
+F 2 "" H 5188 1800 50  0001 C CNN
+F 3 "~" H 5150 1950 50  0001 C CNN
+	1    5150 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 61AB0193
+P 5150 1750
+F 0 "#PWR?" H 5150 1600 50  0001 C CNN
+F 1 "+3.3V" H 5165 1923 50  0000 C CNN
+F 2 "" H 5150 1750 50  0001 C CNN
+F 3 "" H 5150 1750 50  0001 C CNN
+	1    5150 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 1800 4650 1800
+Wire Wire Line
+	4650 1750 4650 1800
+Connection ~ 4650 1800
+Wire Wire Line
+	5150 1750 5150 1800
+Wire Wire Line
+	4200 2100 4650 2100
+Wire Wire Line
+	4650 2100 4650 2500
+Wire Wire Line
+	4650 2500 4800 2500
+Connection ~ 4650 2100
+Wire Wire Line
+	4900 2500 5150 2500
+Wire Wire Line
+	5150 2500 5150 2100
+Wire Wire Line
+	4050 2900 4300 2900
+Wire Wire Line
+	4300 3000 4050 3000
+Wire Wire Line
+	4050 3100 4300 3100
+Wire Wire Line
+	4300 3200 4050 3200
+$Comp
+L power:GND #PWR?
+U 1 1 61AB198D
+P 5700 3450
+F 0 "#PWR?" H 5700 3200 50  0001 C CNN
+F 1 "GND" H 5705 3277 50  0000 C CNN
+F 2 "" H 5700 3450 50  0001 C CNN
+F 3 "" H 5700 3450 50  0001 C CNN
+	1    5700 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 61AB2A83
+P 5700 3250
+F 0 "C?" H 5815 3296 50  0000 L CNN
+F 1 "0.1u" H 5815 3205 50  0000 L CNN
+F 2 "" H 5738 3100 50  0001 C CNN
+F 3 "~" H 5700 3250 50  0001 C CNN
+	1    5700 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 3100 5700 3100
+Wire Wire Line
+	5700 3400 5700 3450
+$Comp
+L power:GND #PWR?
+U 1 1 61AB43F5
+P 6050 3000
+F 0 "#PWR?" H 6050 2750 50  0001 C CNN
+F 1 "GND" H 6055 2827 50  0000 C CNN
+F 2 "" H 6050 3000 50  0001 C CNN
+F 3 "" H 6050 3000 50  0001 C CNN
+	1    6050 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 3000 5300 3000
+Text HLabel 5700 2900 2    50   Output ~ 0
+IMU_INT
+Wire Wire Line
+	5300 2900 5700 2900
+$EndSCHEMATC
