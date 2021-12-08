@@ -14,22 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCU_ST_STM32F4:STM32F405RGTx U3
-U 1 1 60F36A6E
-P 3250 4150
-F 0 "U3" H 3250 2261 50  0000 C CNN
-F 1 "STM32F405RGTx" H 3250 2170 50  0000 C CNN
-F 2 "Package_QFP:LQFP-64_10x10mm_P0.5mm" H 2650 2450 50  0001 R CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00037051.pdf" H 3250 4150 50  0001 C CNN
-	1    3250 4150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3150 5950 3250 5950
-Connection ~ 3250 5950
-Wire Wire Line
-	3250 5950 3350 5950
-$Comp
 L power:GND #PWR076
 U 1 1 60EE0122
 P 3150 5950
@@ -40,7 +24,6 @@ F 3 "" H 3150 5950 50  0001 C CNN
 	1    3150 5950
 	1    0    0    -1  
 $EndComp
-Connection ~ 3150 5950
 $Comp
 L power:+3.3V #PWR075
 U 1 1 60EE1AE2
@@ -52,18 +35,6 @@ F 3 "" H 3050 2350 50  0001 C CNN
 	1    3050 2350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3050 2350 3150 2350
-Connection ~ 3050 2350
-Connection ~ 3150 2350
-Wire Wire Line
-	3150 2350 3250 2350
-Connection ~ 3250 2350
-Wire Wire Line
-	3250 2350 3350 2350
-Connection ~ 3350 2350
-Wire Wire Line
-	3350 2350 3450 2350
 $Comp
 L power:+3.3VA #PWR077
 U 1 1 60EE2B83
@@ -102,22 +73,14 @@ Wire Wire Line
 	4200 4650 3950 4650
 Wire Wire Line
 	4200 4750 3950 4750
-Text HLabel 2300 4950 0    50   Input ~ 0
-ENCODER_1B
-Text HLabel 2300 4850 0    50   Input ~ 0
-ENCODER_1A
 Text HLabel 4200 5050 2    50   Output ~ 0
 IMU_CS
 Wire Wire Line
 	4200 5050 3950 5050
-Wire Wire Line
-	2300 4950 2550 4950
-Wire Wire Line
-	2300 4850 2550 4850
 Text HLabel 4200 4850 2    50   Input ~ 0
-ENCODER_1A
+ENCODER_2A
 Text HLabel 4200 4950 2    50   Input ~ 0
-ENCODER_1B
+ENCODER_2B
 Wire Wire Line
 	4200 4850 3950 4850
 Wire Wire Line
@@ -126,30 +89,6 @@ Text HLabel 2300 4250 0    50   Input ~ 0
 BATT
 Wire Wire Line
 	2550 4250 2300 4250
-Text HLabel 4200 2550 2    50   Output ~ 0
-IRLED_FRONT
-Text HLabel 4200 2650 2    50   Output ~ 0
-IRLED_SIDE
-Wire Wire Line
-	3950 2550 4200 2550
-Wire Wire Line
-	3950 2650 4200 2650
-Text HLabel 4250 3350 2    50   Output ~ 0
-MD1_IN1
-Text HLabel 4250 3450 2    50   Output ~ 0
-MD1_IN2
-Text HLabel 4250 3550 2    50   Output ~ 0
-MD2_IN1
-Text HLabel 4250 3650 2    50   Output ~ 0
-MD2_IN2
-Wire Wire Line
-	3950 3350 4250 3350
-Wire Wire Line
-	3950 3450 4250 3450
-Wire Wire Line
-	3950 3550 4250 3550
-Wire Wire Line
-	3950 3650 4250 3650
 Text HLabel 2300 4350 0    50   Input ~ 0
 MD1_CS
 Text HLabel 2300 4450 0    50   Input ~ 0
@@ -297,7 +236,7 @@ L Device:R R37
 U 1 1 6191F256
 P 9500 4600
 F 0 "R37" H 9570 4646 50  0000 L CNN
-F 1 "R" H 9570 4555 50  0000 L CNN
+F 1 "10k" H 9570 4555 50  0000 L CNN
 F 2 "" V 9430 4600 50  0001 C CNN
 F 3 "~" H 9500 4600 50  0001 C CNN
 	1    9500 4600
@@ -319,7 +258,7 @@ L Device:R R36
 U 1 1 6191FFA1
 P 8450 4600
 F 0 "R36" H 8520 4646 50  0000 L CNN
-F 1 "R" H 8520 4555 50  0000 L CNN
+F 1 "10k" H 8520 4555 50  0000 L CNN
 F 2 "" V 8380 4600 50  0001 C CNN
 F 3 "~" H 8450 4600 50  0001 C CNN
 	1    8450 4600
@@ -373,28 +312,6 @@ F 3 "" H 6300 3750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R35
-U 1 1 6192BE5A
-P 6300 4050
-F 0 "R35" H 6370 4096 50  0000 L CNN
-F 1 "R" H 6370 4005 50  0000 L CNN
-F 2 "" V 6230 4050 50  0001 C CNN
-F 3 "~" H 6300 4050 50  0001 C CNN
-	1    6300 4050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R33
-U 1 1 6192D903
-P 5800 4550
-F 0 "R33" H 5870 4596 50  0000 L CNN
-F 1 "R" H 5870 4505 50  0000 L CNN
-F 2 "" V 5730 4550 50  0001 C CNN
-F 3 "~" H 5800 4550 50  0001 C CNN
-	1    5800 4550
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:Q_NMOS_GSD Q3
 U 1 1 6192E391
 P 6200 5200
@@ -423,15 +340,9 @@ Wire Wire Line
 Wire Wire Line
 	6300 4400 6500 4400
 Wire Wire Line
-	6300 4400 5800 4400
-Connection ~ 6300 4400
-Wire Wire Line
-	5800 4700 6300 4700
-Wire Wire Line
 	6500 4700 6500 4500
 Wire Wire Line
 	6300 4700 6300 5000
-Connection ~ 6300 4700
 Wire Wire Line
 	6300 4700 6500 4700
 Text Label 5700 5200 2    50   ~ 0
@@ -583,12 +494,8 @@ F 3 "" H 5200 7200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4950 7200 5200 7200
-NoConn ~ 3950 2750
-NoConn ~ 3950 2850
 NoConn ~ 3950 2950
 NoConn ~ 3950 3050
-NoConn ~ 3950 3150
-NoConn ~ 3950 3250
 NoConn ~ 3950 3750
 NoConn ~ 3950 4050
 NoConn ~ 3950 4450
@@ -601,8 +508,6 @@ NoConn ~ 2550 5550
 NoConn ~ 2550 5450
 NoConn ~ 2550 5350
 NoConn ~ 2550 5250
-NoConn ~ 2550 5150
-NoConn ~ 2550 5050
 NoConn ~ 2550 4550
 NoConn ~ 2550 4050
 NoConn ~ 2550 3850
@@ -739,7 +644,7 @@ L Device:R R34
 U 1 1 61A4A7B5
 P 5900 5350
 F 0 "R34" H 5970 5396 50  0000 L CNN
-F 1 "R" H 5970 5305 50  0000 L CNN
+F 1 "10k" H 5970 5305 50  0000 L CNN
 F 2 "" V 5830 5350 50  0001 C CNN
 F 3 "~" H 5900 5350 50  0001 C CNN
 	1    5900 5350
@@ -753,4 +658,130 @@ Wire Wire Line
 Connection ~ 6300 5500
 Wire Wire Line
 	6300 5500 6300 5600
+Wire Wire Line
+	3950 3350 4250 3350
+Wire Wire Line
+	3950 3650 4250 3650
+Wire Wire Line
+	3950 3550 4250 3550
+Wire Wire Line
+	3950 3450 4250 3450
+Text HLabel 4250 3650 2    50   Output ~ 0
+MD2_IN2
+Text HLabel 4250 3550 2    50   Output ~ 0
+MD2_IN1
+Text HLabel 4250 3450 2    50   Output ~ 0
+MD1_IN2
+Text HLabel 4250 3350 2    50   Output ~ 0
+MD1_IN1
+Text Notes 4850 3500 0    50   ~ 0
+TIM1\n
+Text Notes 4900 4900 0    50   ~ 0
+TIM4\n
+Text Notes 4900 4650 0    50   ~ 0
+SPI1\n
+Text Notes 5050 4400 0    50   ~ 0
+ADC\n\n
+Text Notes 4700 5650 0    50   ~ 0
+TIM12\n
+Text Notes 1350 4350 0    50   ~ 0
+ADC\n
+Text Notes 1150 5000 0    50   ~ 0
+TIM8\n
+Text Notes 4650 2600 0    50   ~ 0
+TIM5\n
+Text HLabel 4200 2750 2    50   Output ~ 0
+MD_SUC_IN1
+Text HLabel 4200 2850 2    50   Output ~ 0
+MD_SUC_IN2
+Wire Wire Line
+	2550 4850 2300 4850
+Wire Wire Line
+	2550 4950 2300 4950
+Text HLabel 2300 4950 0    50   Output ~ 0
+IRLED_SIDE
+Text HLabel 2300 4850 0    50   Output ~ 0
+IRLED_FRONT
+Wire Wire Line
+	3950 2850 4200 2850
+Wire Wire Line
+	4200 2750 3950 2750
+Wire Wire Line
+	3950 3150 4200 3150
+Wire Wire Line
+	3950 3250 4200 3250
+Text HLabel 4200 3250 2    50   Input ~ 0
+ENCODER_1B
+Text HLabel 4200 3150 2    50   Input ~ 0
+ENCODER_1A
+Text Notes 4800 3150 0    50   ~ 0
+TIM3\n
+Wire Wire Line
+	3250 5950 3350 5950
+Wire Wire Line
+	3150 5950 3250 5950
+Connection ~ 3250 5950
+Connection ~ 3150 5950
+Wire Wire Line
+	3350 2350 3450 2350
+Connection ~ 3350 2350
+Wire Wire Line
+	3250 2350 3350 2350
+Connection ~ 3250 2350
+Wire Wire Line
+	3150 2350 3250 2350
+Wire Wire Line
+	3050 2350 3150 2350
+Connection ~ 3150 2350
+Connection ~ 3050 2350
+$Comp
+L MCU_ST_STM32F4:STM32F405RGTx U3
+U 1 1 60F36A6E
+P 3250 4150
+F 0 "U3" H 3250 2261 50  0000 C CNN
+F 1 "STM32F405RGTx" H 3250 2170 50  0000 C CNN
+F 2 "Package_QFP:LQFP-64_10x10mm_P0.5mm" H 2650 2450 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00037051.pdf" H 3250 4150 50  0001 C CNN
+	1    3250 4150
+	1    0    0    -1  
+$EndComp
+Text Notes 5000 5150 0    50   ~ 0
+TIM11\n
+NoConn ~ 3950 2550
+NoConn ~ 3950 2650
+Text Notes 4850 2800 0    50   ~ 0
+TIM9\n
+NoConn ~ 2550 5050
+NoConn ~ 2550 5150
+$Comp
+L Device:R R35
+U 1 1 6192BE5A
+P 6300 4050
+F 0 "R35" H 6370 4096 50  0000 L CNN
+F 1 "500" H 6370 4005 50  0000 L CNN
+F 2 "" V 6230 4050 50  0001 C CNN
+F 3 "~" H 6300 4050 50  0001 C CNN
+	1    6300 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT_TRIM 2.2k
+U 1 1 61BEE8D3
+P 5950 4400
+F 0 "2.2k" V 5743 4400 50  0000 C CNN
+F 1 "R_POT_TRIM" V 5834 4400 50  0000 C CNN
+F 2 "" H 5950 4400 50  0001 C CNN
+F 3 "~" H 5950 4400 50  0001 C CNN
+	1    5950 4400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6100 4400 6300 4400
+Connection ~ 6300 4400
+Wire Wire Line
+	5950 4550 5950 4700
+Wire Wire Line
+	5950 4700 6300 4700
+Connection ~ 6300 4700
+NoConn ~ 5800 4400
 $EndSCHEMATC

@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 6
+Sheet 4 6
 Title ""
 Date ""
 Rev ""
@@ -161,10 +161,7 @@ F 3 "" H 6050 3000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6050 3000 5300 3000
-Text HLabel 5700 2900 2    50   Output ~ 0
-IMU_INT
-Wire Wire Line
-	5300 2900 5700 2900
 Text HLabel 4050 3100 0    50   BiDi ~ 0
 IMU_SPC
+NoConn ~ 5300 2900
 $EndSCHEMATC
