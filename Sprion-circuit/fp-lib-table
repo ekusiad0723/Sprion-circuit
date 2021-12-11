@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name Sprion-circuit)(type KiCad)(uri C:/Users/daisu/Documents/GitHub/Sprion-circuit/Sprion-circuit/Sprion-circuit_lib)(options "sprion-cirscuit 用のフットプリント")(descr ""))
+)
