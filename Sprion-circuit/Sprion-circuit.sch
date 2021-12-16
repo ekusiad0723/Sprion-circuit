@@ -14,13 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 8500 1600 2100 1200
-U 60F3852A
-F0 "Power" 50
-F1 "Power.sch" 50
-F2 "BAT" O L 8500 2700 50 
-$EndSheet
-$Sheet
 S 8500 3100 1850 900 
 U 60E5E10A
 F0 "wall_sensor" 50
@@ -135,5 +128,11 @@ Wire Wire Line
 	4400 3300 5200 3300
 Wire Wire Line
 	5200 3400 4400 3400
-NoConn ~ 10000 2050
+$Sheet
+S 8500 1600 2100 1200
+U 60F3852A
+F0 "Power" 50
+F1 "Power.sch" 50
+F2 "BAT" O L 8500 2700 50 
+$EndSheet
 $EndSCHEMATC
